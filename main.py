@@ -7,9 +7,6 @@ from scapy.all import *  # For pcap, socket
 from socket import socket, AF_INET, SOCK_STREAM
 
 
-# from scapy.layers.inet import TCP, IP
-
-
 class HTTPResponse:
     def __init__(self, req_obj):
         """
@@ -80,6 +77,7 @@ class HTTPMonitor:
 
             except Exception as exp:
                 print exp
+
 
 if __name__ == '__main__':
     mon = HTTPMonitor(pypcap.pcap_lookupdev())
