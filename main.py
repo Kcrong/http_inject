@@ -81,11 +81,12 @@ class HTTPMonitor:
             except Exception as exp:
                 print exp
 
+if __name__ == '__main__':
+    mon = HTTPMonitor(pypcap.pcap_lookupdev())
 
-mon = HTTPMonitor(pypcap.pcap_lookupdev())
-for i in mon.requests():
-    if i.method != 'GET':
-        continue
-    else:
-        res = HTTPResponse(i)
-        print "asdf"
+    for i in mon.requests():
+        if i.method != 'GET':
+            continue
+        else:
+            res = HTTPResponse(i)
+            print "asdf"
