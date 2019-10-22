@@ -13,7 +13,7 @@ Magic-file-extensions==0.2
 matplotlib==1.5.1
 ndg-httpsclient==0.4.0
 numpy==1.11.0
-Pillow==3.1.2
+Pillow==6.2.0
 pyasn1==0.1.9
 pygobject==3.20.0
 pyliblzma==0.5.3
