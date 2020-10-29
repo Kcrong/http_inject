@@ -29,4 +29,4 @@ requests==2.9.1
 scipy==0.17.0
 six==1.10.0
 unity-lens-photos==1.0
-urllib3==1.13.1
+urllib3==1.24.2
